@@ -109,17 +109,18 @@ h1 {
     opacity: 70%;
 }
 
-@media (min-width: 82.438rem) {
+@media (min-width: 77rem) {
 
     body {      
         display: flex;
+        justify-content: center;
         padding: 8rem;
     }
 
     .wrapper {        
-        grid-template-columns: repeat(2, 41.5rem);
+        grid-template-columns: repeat(2, 40vw);
         column-gap: 2.4rem;
-        row-gap: 2rem;
+        row-gap: 2rem;        
     }
 
     section {
