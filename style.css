@@ -25,18 +25,21 @@
 }
 
 body {
+    background-image: url(design/desktop-design-inverted.jpg);
     background-color: var(--cor1);  
-    padding: 4rem;
+    padding: 5.4rem 1.88rem;
+
 }
 
 .wrapper {
     display: grid;
     gap: 2rem;
+    opacity: 40%;
 }
 
 section {    
-    border-radius: 0.625;
-    padding: 1.5rem;
+    border-radius: 0.625rem;
+    padding: 1.85rem 2.2rem 2.4rem 2.2rem;
 }
 
 .primeiro {
@@ -49,8 +52,7 @@ section {
 }
 
 .segundo {
-    background-color:var(--cor4);
-    
+    background-color:var(--cor4);    
     color: var(--cor1);
 }
 
@@ -81,8 +83,9 @@ section {
 .pessoa img {
     border-radius: 50%;
     border: 3px solid var(--cor7);
-    margin-right: 20px;
-    width: 50px;    
+    margin-top: 2px;
+    margin-right: 14px;
+    width: 34px;    
 }
 
 .pessoa img.bege {
@@ -91,22 +94,27 @@ section {
 
 .person {
     line-height: 15px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 h1 {
-    font-size: 21.9px;
-    line-height: 23px;
+    font-size: 20.4px;
+    line-height: 24px;
     font-weight: bolder;
-    padding: 10px 0;
+    padding: 13.1px 0 17px 2.2px;
 }
 
 .cinquenta {
     opacity: 50%;
+    font-size: 11px;
 }
 
 .setenta {
     opacity: 70%;
+    margin-left: 1px;
+    font-size: 13.1px;
+    line-height: 17.8px;
+    padding: 0px 15.4px 0px 2.2px;
 }
 
 @media (min-width: 77rem) {
@@ -173,9 +181,17 @@ h1 {
         grid-row-end: 3;
     }
 
-    section {
-        height: 21.6rem;
+    section {   
+        height: 21.6rem; 
+        padding: 1.85rem 2.2rem 2.4rem 2.2rem;
     }
+
+    .primeiro .setenta {
+        margin-top: 0;
+    } 
+    .segundo .setenta {
+        margin-top: 0;
+    } 
     
     .terceiro {
         height: 20.5rem;
@@ -183,11 +199,46 @@ h1 {
     
     .quarto {
         height: 20.5rem;
+        padding: 1.85rem 3rem 2.4rem 2.2rem;
+    }
+
+    .quarto .setenta {
+        margin-top: 0.5rem;
+    } 
+
+    .quarto h1 {
+        font-size: 1.52rem;
     }
     
     .quinto {
         height: 44rem;
                 
+    }
+
+    .person {
+        line-height: 15px;
+        font-size: 13px;
+    }
+    
+    h1 {
+        font-size: 20.3px;
+        line-height: 24px;
+        font-weight: bolder;
+        padding: 13.1px 0 17px 2.2px;
+    }
+    
+    .cinquenta {
+        opacity: 50%;
+        font-size: 11px;
+    }
+    
+    .setenta {
+        opacity: 70%;
+        margin-top: 5px;
+        margin-left: 1px;
+        font-size: 13.1px;
+        line-height: 17.8px;
+        padding: 0px 0px 0px 2.2px;
     }
     
 }
